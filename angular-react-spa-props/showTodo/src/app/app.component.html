@@ -1,0 +1,10 @@
+<div>
+
+  <input #task placeholder="angular" />
+  <button (click)="addTodo(task.value)">Add</button>
+  <br />Angular:<span *ngFor="let item of todos">
+    {{item}} -
+  </span>
+  <parcel [config]="config" [mountParcel]="mountRootParcel" [customProps]="{todos}">
+  </parcel>
+</div>
